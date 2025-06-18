@@ -1,0 +1,22 @@
+package in.bl.code;
+import java.util.Scanner;
+
+public class RemDiv {
+	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter total number of pens: ");
+        int totalPens = scanner.nextInt();
+
+        System.out.print("Enter number of students: ");
+        int totalStudents = scanner.nextInt();
+
+        int pensPerStudent = totalPens / totalStudents;
+        int remainingPens = totalPens % totalStudents;
+
+        System.out.println("The Pen Per Student is " + pensPerStudent + 
+                           " and the remaining pen not distributed is " + remainingPens);
+
+        scanner.close();
+    }
+}
